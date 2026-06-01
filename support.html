@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destek – Kpss Pusulam</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+    header {
+      background: #1c1c1e;
+      color: #fff;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { opacity: 0.7; font-size: 0.92rem; margin-top: 0.4rem; }
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #e5e5ea;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #636366;
+      font-size: 0.88rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #e5e5ea;
+      transition: all 0.2s;
+    }
+    nav a:hover { background: #1c1c1e; color: #fff; border-color: #1c1c1e; }
+    .container {
+      max-width: 760px;
+      margin: 2rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.6rem;
+      margin-top: 1.2rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #1c1c1e;
+      border-left: 4px solid #1c1c1e;
+      padding-left: 0.75rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+    h3 { font-size: 0.98rem; font-weight: 700; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+    p, li { font-size: 0.93rem; color: #3a3a3c; margin-top: 0.3rem; }
+    ul { padding-left: 1.4rem; }
+    li { margin-top: 0.4rem; }
+    a { color: #0071e3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact-box {
+      background: #1c1c1e;
+      color: #fff;
+      border-radius: 16px;
+      padding: 1.8rem;
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+    .contact-box h3 { color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .contact-box p { color: rgba(255,255,255,0.75); font-size: 0.9rem; margin-top: 0.4rem; }
+    .contact-box a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #fff;
+      color: #1c1c1e;
+      padding: 0.65rem 1.8rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+    .tag {
+      display: inline-block;
+      background: #f2f2f7;
+      border-radius: 6px;
+      padding: 0.15rem 0.5rem;
+      font-size: 0.8rem;
+      color: #636366;
+      margin-left: 0.4rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: #8e8e93;
+      border-top: 1px solid #e5e5ea;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Destek Merkezi</h1>
+  <p>Kpss Pusulam – Sık Sorulan Sorular &amp; İletişim</p>
+</header>
+
+<nav>
+  <a href="#hesap">Hesap</a>
+  <a href="#premium">Premium</a>
+  <a href="#bildirim">Bildirimler</a>
+  <a href="#teknik">Teknik</a>
+  <a href="#veri">Veri &amp; Gizlilik</a>
+  <a href="#iletisim">İletişim</a>
+</nav>
+
+<div class="container">
+
+  <!-- HESAP -->
+  <h2 id="hesap">Hesap</h2>
+  <div class="card">
+    <h3>Hesap oluşturmam gerekiyor mu?</h3>
+    <p>Hayır. Uygulama anonim giriş yaparak çalışır. E-posta veya şifre girmen gerekmez; ilerleme verileriniz otomatik olarak bulutta saklanır.</p>
+
+    <h3>İlerleme verilerim kaybolursa ne yapmalıyım?</h3>
+    <p>Uygulama verisi cihazınıza ve buluta (Firebase) eşzamanlı kaydedilir. Uygulamayı silip yeniden yüklersen anonim hesabın sıfırlanır. Verilerin geri yüklenmesi için <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a> adresine cihaz bilgileriyle yazabilirsin.</p>
+
+    <h3>Verilerimi silmek istiyorum.</h3>
+    <p>Tüm kişisel verilerinin silinmesi için <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a> adresine "Veri Silme Talebi" konusuyla e-posta gönder. Talebiniz en geç 30 gün içinde işleme alınır.</p>
+  </div>
+
+  <!-- PREMIUM -->
+  <h2 id="premium">Premium &amp; Abonelik</h2>
+  <div class="card">
+    <h3>Premium'a nasıl abone olabilirim?</h3>
+    <p>Uygulama içindeki "Premium" ekranından App Store veya Google Play üzerinden abone olabilirsin. Ödeme tamamen Apple / Google altyapısı üzerinden gerçekleşir.</p>
+
+    <h3>Aboneliğimi nasıl iptal ederim?</h3>
+    <p><strong>iOS:</strong> Ayarlar → Apple Kimliği → Abonelikler → Kpss Pusulam → İptal Et</p>
+    <p><strong>Android:</strong> Google Play → Abonelikler → Kpss Pusulam → İptal Et</p>
+
+    <h3>İade talep etmek istiyorum.</h3>
+    <p>İadeler App Store ve Google Play politikalarına tabidir. <strong>iOS</strong> için <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> adresini ziyaret et. <strong>Android</strong> için Google Play Destek'e başvur.</p>
+
+    <h3>Aboneliğim aktif ama Premium özelliklere erişemiyorum.</h3>
+    <p>Uygulamayı kapatıp yeniden aç. Sorun devam ederse <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a> adresine satın alma makbuzuyla ulaş.</p>
+  </div>
+
+  <!-- BİLDİRİM -->
+  <h2 id="bildirim">Bildirimler</h2>
+  <div class="card">
+    <h3>Günlük hatırlatıcı bildirimleri almıyorum.</h3>
+    <p>Cihaz ayarlarından Kpss Pusulam için bildirimlere izin verildiğini kontrol et: <strong>Ayarlar → Bildirimler → Kpss Pusulam → İzin Ver</strong></p>
+
+    <h3>Bildirimleri kapatmak istiyorum.</h3>
+    <p>Cihaz ayarlarından Kpss Pusulam bildirimlerini devre dışı bırakabilirsin. Uygulama içinde de bildirim tercihlerini değiştirebilirsin.</p>
+  </div>
+
+  <!-- TEKNİK -->
+  <h2 id="teknik">Teknik Sorunlar</h2>
+  <div class="card">
+    <h3>Uygulama donuyor veya çöküyor.</h3>
+    <ul>
+      <li>Uygulamayı tamamen kapatıp yeniden aç.</li>
+      <li>Uygulamanın en güncel sürümde olduğunu kontrol et.</li>
+      <li>Cihazı yeniden başlat.</li>
+      <li>Sorun devam ederse hangi ekranda yaşandığını belirterek <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a> adresine yaz.</li>
+    </ul>
+
+    <h3>Dersler yüklenmiyor.</h3>
+    <p>İnternet bağlantını kontrol et. Uygulama ilk açılışta içerik indirir; sonraki kullanımlar çevrimdışı çalışır.</p>
+
+    <h3>Hangi işletim sistemi sürümleri destekleniyor?</h3>
+    <p>iOS 13+ ve Android 6.0+ (API 23+) desteklenmektedir.</p>
+  </div>
+
+  <!-- VERİ -->
+  <h2 id="veri">Veri &amp; Gizlilik</h2>
+  <div class="card">
+    <h3>Hangi veriler toplanıyor?</h3>
+    <p>Ayrıntılı bilgi için <a href="privacy-policy.html">Gizlilik Politikamızı</a> inceleyebilirsin.</p>
+
+    <h3>Verilerimi indirmek istiyorum.</h3>
+    <p><a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a> adresine "Veri Erişim Talebi" konusuyla e-posta gönder.</p>
+
+    <h3>Reklamları görmek istemiyorum.</h3>
+    <p>Premium aboneliğe geçerek reklamları tamamen kaldırabilirsin.</p>
+  </div>
+
+  <!-- İLETİŞİM -->
+  <h2 id="iletisim">İletişim</h2>
+  <div class="contact-box">
+    <h3>Sorunun burada yoksa bize yaz</h3>
+    <p>E-postana en geç <strong>2 iş günü</strong> içinde yanıt veririz.</p>
+    <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Kpss Pusulam &nbsp;·&nbsp;
+  <a href="marketing.html">Uygulama</a> &nbsp;·&nbsp;
+  <a href="privacy-policy.html">Gizlilik Politikası</a> &nbsp;·&nbsp;
+  <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a>
+</footer>
+
+</body>
+</html>

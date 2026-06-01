@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kpss Pusulam – KPSS Hazırlık Uygulaması</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #1c1c1e 0%, #3a3a3c 100%);
+      color: #fff;
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+    header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border-radius: 999px;
+      padding: 0.3rem 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    header h1 { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.02em; }
+    header p  { font-size: 1.15rem; opacity: 0.8; margin-top: 0.8rem; max-width: 520px; margin-left: auto; margin-right: auto; }
+    .cta {
+      display: inline-flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cta a {
+      display: inline-block;
+      background: #fff;
+      color: #1c1c1e;
+      padding: 0.75rem 1.8rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .cta a:hover { opacity: 0.85; }
+    .cta a.secondary {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+    .features {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.6rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .card .icon { font-size: 2rem; margin-bottom: 0.8rem; }
+    .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .card p  { font-size: 0.88rem; color: #636366; }
+    .section-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 3rem 0 0.5rem;
+      color: #1c1c1e;
+    }
+    .section-sub {
+      text-align: center;
+      color: #636366;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      padding: 0 1rem;
+    }
+    .stores {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0 1.5rem 3rem;
+    }
+    .stores a {
+      display: inline-block;
+      background: #1c1c1e;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+    .stores a:hover { background: #3a3a3c; }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: #8e8e93;
+      border-top: 1px solid #e5e5ea;
+    }
+    footer a { color: #0071e3; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">KPSS Hazırlık</div>
+  <h1>Kpss Pusulam</h1>
+  <p>Akıllı, gamified ve kişiselleştirilmiş KPSS çalışma deneyimi. Her gün birkaç dakika, büyük fark.</p>
+  <div class="cta">
+    <a href="support.html">Destek Al</a>
+    <a href="privacy-policy.html" class="secondary">Gizlilik Politikası</a>
+  </div>
+</header>
+
+<p class="section-title">Neden Kpss Pusulam?</p>
+<p class="section-sub">Sadece soru çözmek değil, gerçekten öğrenmek için tasarlandı.</p>
+
+<div class="features">
+  <div class="card">
+    <div class="icon">🗺️</div>
+    <h3>İstasyon Haritası</h3>
+    <p>Müfredat, görsel bir yolculuk haritasına dönüştü. Nerede olduğunu her zaman bil.</p>
+  </div>
+  <div class="card">
+    <div class="icon">📚</div>
+    <h3>Konu Anlatımı</h3>
+    <p>Sade ve anlaşılır ders kartları, mini sınavlarla desteklenen interaktif öğrenme.</p>
+  </div>
+  <div class="card">
+    <div class="icon">⚡</div>
+    <h3>Günlük Meydan Okuma</h3>
+    <p>Her gün adaptif zorlukta sorularla kendini test et, XP kazan, sıralamada yüksel.</p>
+  </div>
+  <div class="card">
+    <div class="icon">🏆</div>
+    <h3>Liderboard</h3>
+    <p>Diğer KPSS adaylarıyla rekabet et, motivasyonunu canlı tut.</p>
+  </div>
+  <div class="card">
+    <div class="icon">🔔</div>
+    <h3>Hatırlatıcılar</h3>
+    <p>Günlük çalışma bildirimleriyle serini kırma, alışkanlık oluştur.</p>
+  </div>
+  <div class="card">
+    <div class="icon">📊</div>
+    <h3>İlerleme Takibi</h3>
+    <p>Çözülen soru sayısı, doğruluk oranı ve konu bazlı zayıf noktaların analitiği.</p>
+  </div>
+</div>
+
+<p class="section-title">Hemen İndir</p>
+<p class="section-sub">iOS ve Android için ücretsiz.</p>
+<div class="stores">
+  <a href="https://apps.apple.com" target="_blank">App Store'dan İndir</a>
+  <a href="https://play.google.com" target="_blank">Google Play'den İndir</a>
+</div>
+
+<footer>
+  &copy; 2026 Kpss Pusulam &nbsp;·&nbsp;
+  <a href="privacy-policy.html">Gizlilik Politikası</a> &nbsp;·&nbsp;
+  <a href="support.html">Destek</a> &nbsp;·&nbsp;
+  <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a>
+</footer>
+
+</body>
+</html>
