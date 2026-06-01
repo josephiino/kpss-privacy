@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası / Privacy Policy – Kpss Pusulam</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+    header {
+      background: #1c1c1e;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { font-size: 0.9rem; opacity: 0.7; margin-top: 0.4rem; }
+    .lang-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.2rem;
+      background: #fff;
+      border-bottom: 1px solid #e5e5ea;
+    }
+    .lang-tabs button {
+      padding: 0.5rem 1.4rem;
+      border: 2px solid #636366;
+      border-radius: 999px;
+      background: transparent;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #636366;
+      transition: all 0.2s;
+    }
+    .lang-tabs button.active {
+      background: #1c1c1e;
+      border-color: #1c1c1e;
+      color: #fff;
+    }
+    .container {
+      max-width: 780px;
+      margin: 2rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+    section { display: none; }
+    section.active { display: block; }
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1c1c1e;
+      border-left: 4px solid #1c1c1e;
+      padding-left: 0.75rem;
+    }
+    h3 { font-size: 1rem; margin-top: 1.2rem; margin-bottom: 0.3rem; font-weight: 600; }
+    p, li { font-size: 0.95rem; color: #3a3a3c; margin-top: 0.4rem; }
+    ul { padding-left: 1.4rem; }
+    li { margin-top: 0.3rem; }
+    a { color: #0071e3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-top: 1.2rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .updated {
+      font-size: 0.82rem;
+      color: #8e8e93;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: #8e8e93;
+      border-top: 1px solid #e5e5ea;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kpss Pusulam</h1>
+  <p>Gizlilik Politikası &amp; Privacy Policy</p>
+</header>
+
+<div class="lang-tabs">
+  <button class="active" onclick="showLang('tr', this)">Türkçe</button>
+  <button onclick="showLang('en', this)">English</button>
+</div>
+
+<!-- ===== TÜRKÇE ===== -->
+<div class="container">
+<section id="tr" class="active">
+
+  <div class="card">
+    <p class="updated">Son güncelleme: 1 Haziran 2026</p>
+    <p style="margin-top:0.8rem">
+      Bu Gizlilik Politikası, <strong>Kpss Pusulam</strong> uygulamasının ("Uygulama") kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.
+    </p>
+  </div>
+
+  <h2>1. Toplanan Veriler</h2>
+  <div class="card">
+    <h3>1.1 Kimlik &amp; Hesap Bilgileri</h3>
+    <ul>
+      <li>Firebase Authentication aracılığıyla oluşturulan <strong>anonim kullanıcı kimliği</strong> (e-posta veya ad soyad toplanmaz).</li>
+    </ul>
+
+    <h3>1.2 Kullanım &amp; Analitik Verileri</h3>
+    <ul>
+      <li>Uygulama içi etkinlikler: ders başlatma/tamamlama, test sonuçları, doğruluk oranı, harcanan süre, günlük seri bilgisi, XP kazanımları.</li>
+      <li>Kullanıcı özellikleri: seçilen sınav türü (KPSS Genel / OABT dalı).</li>
+      <li>Bu veriler <strong>Firebase Analytics</strong> ile toplanır ve Google'ın gizlilik politikasına tabidir.</li>
+    </ul>
+
+    <h3>1.3 Bildirim Verileri</h3>
+    <ul>
+      <li><strong>Firebase Cloud Messaging (FCM)</strong> aracılığıyla push bildirimleri göndermek için cihaz token'ı toplanır.</li>
+      <li>Bildirim izni kullanıcıdan açıkça istenir; izin verilmezse token alınmaz.</li>
+    </ul>
+
+    <h3>1.4 Uygulama İçi İlerleme Verileri</h3>
+    <ul>
+      <li>Test sonuçları, ders tamamlama durumu, can (heart) sayısı, XP ve liderboard sıralaması <strong>Firebase Firestore</strong>'da saklanır.</li>
+      <li>Ayarlar ve çevrimdışı ilerleme verisi cihazda <strong>yerel olarak</strong> (Hive &amp; SharedPreferences) depolanır.</li>
+    </ul>
+
+    <h3>1.5 Reklam Verileri</h3>
+    <ul>
+      <li>Uygulama <strong>Google AdMob</strong> aracılığıyla ödüllü reklam gösterir. AdMob; cihaz tanımlayıcıları ve reklam etkileşim verileri toplayabilir. Ayrıntılar için <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a>'na bakınız.</li>
+    </ul>
+
+    <h3>1.6 Abonelik &amp; Satın Alma Verileri</h3>
+    <ul>
+      <li>Premium abonelikler <strong>Adapty</strong> SDK üzerinden yönetilir. Ödeme bilgileri App Store / Google Play tarafından işlenir; uygulama kart numarası veya ödeme bilgisi almaz. Adapty'nin politikası için: <a href="https://adapty.io/privacy" target="_blank">adapty.io/privacy</a>.</li>
+    </ul>
+  </div>
+
+  <h2>2. Verilerin Kullanım Amacı</h2>
+  <div class="card">
+    <ul>
+      <li>Kişiselleştirilmiş KPSS çalışma deneyimi sunmak</li>
+      <li>İlerleme takibi ve öğrenme analitiği sağlamak</li>
+      <li>Push bildirimlerle çalışma hatırlatıcıları göndermek</li>
+      <li>Uygulama performansını ve hataları izlemek</li>
+      <li>Ücretsiz kullanıcılara ödüllü reklam göstermek</li>
+      <li>Premium abonelik süreçlerini yönetmek</li>
+    </ul>
+  </div>
+
+  <h2>3. Üçüncü Taraf Hizmetler</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Google Firebase</strong> (Analytics, Auth, Firestore, Storage, Messaging, Remote Config) – <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Gizlilik</a></li>
+      <li><strong>Google AdMob</strong> – <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a></li>
+      <li><strong>Adapty</strong> (Abonelik yönetimi) – <a href="https://adapty.io/privacy" target="_blank">Adapty Gizlilik Politikası</a></li>
+    </ul>
+  </div>
+
+  <h2>4. Veri Saklama &amp; Güvenlik</h2>
+  <div class="card">
+    <p>Veriler, hizmetin sağlanması için gerekli olduğu sürece saklanır. Firebase altyapısı endüstri standardı şifreleme ve güvenlik önlemleri kullanır. Yerel veriler yalnızca cihazınızda tutulur.</p>
+  </div>
+
+  <h2>5. Çocukların Gizliliği</h2>
+  <div class="card">
+    <p>Uygulama, 13 yaşın altındaki çocuklara yönelik tasarlanmamıştır. 13 yaşın altındaki bir kullanıcıya ait veri topladığımızı fark edersek, söz konusu verileri derhal sileriz.</p>
+  </div>
+
+  <h2>6. Kullanıcı Hakları &amp; Veri Silme</h2>
+  <div class="card">
+    <p>Verilerinize erişim, düzeltme veya silinmesini talep etmek için aşağıdaki e-posta adresine yazabilirsiniz. Talebiniz en geç <strong>30 gün</strong> içinde yanıtlanır.</p>
+    <p style="margin-top:0.8rem"><strong>İletişim:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
+  </div>
+
+  <h2>7. Bu Politikanın Değiştirilmesi</h2>
+  <div class="card">
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikler uygulama içi bildirimle duyurulacaktır. Güncel politika her zaman bu sayfada yayınlanır.</p>
+  </div>
+
+</section>
+
+<!-- ===== ENGLISH ===== -->
+<section id="en">
+
+  <div class="card">
+    <p class="updated">Last updated: June 1, 2026</p>
+    <p style="margin-top:0.8rem">
+      This Privacy Policy explains how <strong>Kpss Pusulam</strong> ("the App") collects, uses, and protects your personal data. By using the App, you agree to this policy.
+    </p>
+  </div>
+
+  <h2>1. Data We Collect</h2>
+  <div class="card">
+    <h3>1.1 Identity &amp; Account</h3>
+    <ul>
+      <li>An <strong>anonymous user ID</strong> generated via Firebase Authentication (no name or email is collected).</li>
+    </ul>
+
+    <h3>1.2 Usage &amp; Analytics</h3>
+    <ul>
+      <li>In-app events: lesson start/completion, test scores, accuracy rate, time spent, daily streak, XP earned.</li>
+      <li>User properties: selected exam type (KPSS General / OABT branch).</li>
+      <li>Collected via <strong>Firebase Analytics</strong> and subject to Google's privacy policy.</li>
+    </ul>
+
+    <h3>1.3 Notification Data</h3>
+    <ul>
+      <li>A device token is collected via <strong>Firebase Cloud Messaging (FCM)</strong> to deliver push notifications.</li>
+      <li>Notification permission is explicitly requested; no token is obtained if permission is denied.</li>
+    </ul>
+
+    <h3>1.4 In-App Progress Data</h3>
+    <ul>
+      <li>Test results, lesson completion status, hearts, XP, and leaderboard rank are stored in <strong>Firebase Firestore</strong>.</li>
+      <li>Settings and offline progress are stored <strong>locally</strong> on your device (Hive &amp; SharedPreferences).</li>
+    </ul>
+
+    <h3>1.5 Advertising Data</h3>
+    <ul>
+      <li>The App shows rewarded ads via <strong>Google AdMob</strong>. AdMob may collect device identifiers and ad interaction data. See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> for details.</li>
+    </ul>
+
+    <h3>1.6 Subscription &amp; Purchase Data</h3>
+    <ul>
+      <li>Premium subscriptions are managed via the <strong>Adapty</strong> SDK. Payments are processed by App Store / Google Play; the App never receives card or payment details. See <a href="https://adapty.io/privacy" target="_blank">adapty.io/privacy</a>.</li>
+    </ul>
+  </div>
+
+  <h2>2. How We Use Your Data</h2>
+  <div class="card">
+    <ul>
+      <li>Deliver a personalized KPSS study experience</li>
+      <li>Track progress and provide learning analytics</li>
+      <li>Send study reminders via push notifications</li>
+      <li>Monitor app performance and bugs</li>
+      <li>Show rewarded ads to free-tier users</li>
+      <li>Manage premium subscription processes</li>
+    </ul>
+  </div>
+
+  <h2>3. Third-Party Services</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Google Firebase</strong> (Analytics, Auth, Firestore, Storage, Messaging, Remote Config) – <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a></li>
+      <li><strong>Google AdMob</strong> – <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      <li><strong>Adapty</strong> (Subscription management) – <a href="https://adapty.io/privacy" target="_blank">Adapty Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <h2>4. Data Retention &amp; Security</h2>
+  <div class="card">
+    <p>Data is retained as long as necessary to provide the service. Firebase infrastructure uses industry-standard encryption and security measures. Local data remains only on your device.</p>
+  </div>
+
+  <h2>5. Children's Privacy</h2>
+  <div class="card">
+    <p>The App is not intended for children under 13. If we become aware that we have collected data from a child under 13, we will delete it immediately.</p>
+  </div>
+
+  <h2>6. Your Rights &amp; Data Deletion</h2>
+  <div class="card">
+    <p>To request access, correction, or deletion of your data, contact us at the email below. We will respond within <strong>30 days</strong>.</p>
+    <p style="margin-top:0.8rem"><strong>Contact:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
+  </div>
+
+  <h2>7. Changes to This Policy</h2>
+  <div class="card">
+    <p>We may update this policy from time to time. Significant changes will be announced via an in-app notification. The current policy is always published on this page.</p>
+  </div>
+
+</section>
+</div><!-- /container -->
+
+<footer>
+  &copy; 2026 Kpss Pusulam &middot; <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a>
+</footer>
+
+<script>
+  function showLang(lang, btn) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-tabs button').forEach(b => b.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
