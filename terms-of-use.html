@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kullanım Koşulları / Terms of Use – KPSS Pusulam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+/* ============================================================
+   KPSS Pusulam — Terms of Use
+   Matches landing page dark theme (#4BEE2B primary)
+   ============================================================ */
+:root {
+  --primary: #4BEE2B;
+  --primary-subtle: rgba(75,238,43,0.08);
+  --bg: #0c0c0c;
+  --bg-card: #161616;
+  --bg-card2: #1e1e1e;
+  --border: rgba(255,255,255,0.07);
+  --text: #f0f0f0;
+  --text-muted: #888;
+  --text-dim: #555;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.7;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #2ecc11; border-radius: 3px; }
+
+/* ── Navbar ──────────────────────────────────────────────── */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(12,12,12,0.92); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border); padding: 16px 24px;
+}
+.nav-inner {
+  max-width: 860px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text); }
+.logo-icon { font-size: 1.3rem; }
+.logo-text { font-weight: 700; font-size: 1rem; letter-spacing: -0.02em; }
+.nav-back {
+  font-size: 0.82rem; color: var(--text-muted); text-decoration: none;
+  display: flex; align-items: center; gap: 5px;
+  transition: color 0.2s;
+}
+.nav-back:hover { color: var(--primary); }
+
+/* ── Header ──────────────────────────────────────────────── */
+.page-header {
+  padding: 60px 24px 40px; text-align: center;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(75,238,43,0.04) 0%, transparent 100%);
+}
+.page-header h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 900; letter-spacing: -0.04em; }
+.page-header p { font-size: 0.9rem; color: var(--text-muted); margin-top: 8px; }
+
+/* ── Lang Tabs ───────────────────────────────────────────── */
+.lang-tabs {
+  display: flex; justify-content: center; gap: 10px;
+  padding: 24px; border-bottom: 1px solid var(--border);
+  position: sticky; top: 57px; z-index: 50;
+  background: rgba(12,12,12,0.95); backdrop-filter: blur(12px);
+}
+.lang-tabs button {
+  padding: 8px 24px; border: 1.5px solid var(--border); border-radius: 100px;
+  background: transparent; cursor: pointer; font-size: 0.85rem; font-weight: 600;
+  color: var(--text-muted); font-family: inherit;
+  transition: all 0.2s;
+}
+.lang-tabs button:hover { border-color: rgba(75,238,43,0.4); color: var(--text); }
+.lang-tabs button.active {
+  background: var(--primary); border-color: var(--primary);
+  color: #000;
+}
+
+/* ── Content ─────────────────────────────────────────────── */
+.container { max-width: 860px; margin: 0 auto; padding: 40px 24px 80px; }
+section { display: none; }
+section.active { display: block; }
+
+.updated {
+  display: inline-block; background: var(--primary-subtle);
+  color: var(--primary); font-size: 0.78rem; font-weight: 600;
+  padding: 4px 12px; border-radius: 100px; margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.1rem; font-weight: 700; margin: 36px 0 16px;
+  color: var(--text); display: flex; align-items: center; gap: 10px;
+  letter-spacing: -0.02em;
+}
+h2::before {
+  content: ''; display: block; width: 3px; height: 1.1em;
+  background: var(--primary); border-radius: 2px; flex-shrink: 0;
+}
+h3 { font-size: 0.9rem; font-weight: 700; margin: 20px 0 8px; color: var(--text); }
+
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 16px; padding: 24px; margin-bottom: 8px;
+}
+.card + .card { margin-top: 8px; }
+
+p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 10px; }
+p:last-child { margin-bottom: 0; }
+ul { padding-left: 20px; }
+li { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 8px; line-height: 1.6; }
+li:last-child { margin-bottom: 0; }
+strong { color: var(--text); font-weight: 600; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Footer ──────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--border); padding: 28px 24px;
+  text-align: center;
+}
+.footer-inner {
+  max-width: 860px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-logo { display: flex; align-items: center; gap: 8px; }
+.footer-logo span:first-child { font-size: 1.2rem; }
+.footer-logo span:last-child { font-weight: 700; font-size: 0.95rem; }
+.footer-copy { font-size: 0.8rem; color: var(--text-dim); }
+.footer-link { font-size: 0.8rem; color: var(--text-muted); text-decoration: none; }
+.footer-link:hover { color: var(--primary); }
+
+@media (max-width: 600px) {
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+  .page-header { padding: 40px 24px 28px; }
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🧭</span>
+      <span class="logo-text">KPSS Pusulam</span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Ana Sayfa
+    </a>
+  </div>
+</nav>
+
+<!-- Header -->
+<div class="page-header">
+  <h1>Kullanım Koşulları</h1>
+  <p>Terms of Use</p>
+</div>
+
+<!-- Lang Tabs -->
+<div class="lang-tabs">
+  <button class="active" onclick="showLang('tr', this)">Türkçe</button>
+  <button onclick="showLang('en', this)">English</button>
+</div>
+
+<!-- Content -->
+<div class="container">
+
+<!-- ===== TÜRKÇE ===== -->
+<section id="tr" class="active">
+  <span class="updated">Son güncelleme: 13 Haziran 2026</span>
+
+  <div class="card">
+    <p>Bu Kullanım Koşulları, <strong>KPSS Pusulam</strong> uygulamasını ("Uygulama") kullanımınıza ilişkin kuralları ve koşulları belirler. Uygulamayı indirerek veya kullanarak bu koşulları kabul etmiş sayılırsınız. Koşulları kabul etmiyorsanız lütfen Uygulamayı kullanmayınız.</p>
+  </div>
+
+  <h2>1. Lisans ve Kullanım Hakkı</h2>
+  <div class="card">
+    <p>KPSS Pusulam size, bu Kullanım Koşulları çerçevesinde Uygulamayı kişisel ve ticari olmayan amaçlarla kullanmanız için sınırlı, devredilemez ve münhasır olmayan bir lisans vermektedir.</p>
+    <ul>
+      <li>Uygulamayı yalnızca bu koşullara uygun biçimde kullanabilirsiniz.</li>
+      <li>Uygulamayı kopyalamak, değiştirmek, tersine mühendislik uygulamak veya türev eserler oluşturmak yasaktır.</li>
+      <li>Uygulamayı ticari amaçla yeniden satmak veya alt lisans vermek yasaktır.</li>
+    </ul>
+  </div>
+
+  <h2>2. Hesap ve Kimlik Doğrulama</h2>
+  <div class="card">
+    <p>Uygulama, <strong>Firebase Authentication</strong> aracılığıyla anonim kullanıcı kimlikleri oluşturur. Hesabınızı korumak sizin sorumluluğunuzdadır.</p>
+    <ul>
+      <li>Hesabınıza yetkisiz erişim tespit ettiğinizde derhal bize bildirmelisiniz.</li>
+      <li>Hesap bilgilerinizi üçüncü taraflarla paylaşmamalısınız.</li>
+      <li>Her kullanıcı yalnızca bir hesaba sahip olabilir; birden fazla hesap oluşturmak yasaktır.</li>
+    </ul>
+  </div>
+
+  <h2>3. Ücretli Hizmetler ve Abonelikler</h2>
+  <div class="card">
+    <h3>3.1 Premium Abonelik</h3>
+    <p>Uygulama içinde <strong>Adapty</strong> SDK üzerinden sunulan premium abonelik seçenekleri mevcuttur. Abonelik ücretleri, seçtiğiniz plan ve bölgenize göre değişir.</p>
+    <ul>
+      <li>Abonelikler, iptal etmediğiniz sürece otomatik olarak yenilenir.</li>
+      <li>İptal işlemleri, App Store veya Google Play hesabı ayarlarından gerçekleştirilir.</li>
+      <li>Mevcut abonelik döneminin ortasında iptal etmeniz durumunda ücret iadesi yapılmaz.</li>
+    </ul>
+    <h3>3.2 Ödüllü Reklamlar</h3>
+    <p>Ücretsiz kullanıcılar, <strong>Google AdMob</strong> aracılığıyla ödüllü reklam izleyerek can (heart) veya ek içerik kazanabilir. Reklam içerikleri üçüncü taraflara aittir; bu içeriklerden sorumluluğumuz bulunmamaktadır.</p>
+  </div>
+
+  <h2>4. İçerik ve Fikri Mülkiyet</h2>
+  <div class="card">
+    <p>Uygulamadaki tüm içerik (konu anlatımları, sorular, görseller, arayüz tasarımı vb.) <strong>KPSS Pusulam</strong>'ın mülkiyetindedir veya lisanslıdır.</p>
+    <ul>
+      <li>İçerikleri yazılı izin almadan kopyalamak, dağıtmak veya yayımlamak yasaktır.</li>
+      <li>Uygulamada yer alan sorular yalnızca kişisel çalışma amacıyla kullanılabilir.</li>
+      <li>KPSS Pusulam adı, logosu ve markası tescilli olup izinsiz kullanılamaz.</li>
+    </ul>
+  </div>
+
+  <h2>5. Kabul Edilemez Kullanım</h2>
+  <div class="card">
+    <p>Aşağıdaki kullanımlar kesinlikle yasaktır:</p>
+    <ul>
+      <li>Uygulamayı yasadışı amaçlarla kullanmak</li>
+      <li>Sistemi aşırı yükleyecek otomatik botlar, scraperlar veya araçlar kullanmak</li>
+      <li>Diğer kullanıcıların verilerine yetkisiz erişim sağlamaya çalışmak</li>
+      <li>Liderboard sıralamasını yapay yollarla manipüle etmek</li>
+      <li>Uygulamanın güvenlik açıklarını istismar etmeye çalışmak</li>
+    </ul>
+  </div>
+
+  <h2>6. Sorumluluk Reddi ve Garantiler</h2>
+  <div class="card">
+    <p>Uygulama <strong>"olduğu gibi"</strong> sunulmaktadır. KPSS Pusulam aşağıdaki konularda garanti vermez:</p>
+    <ul>
+      <li>Uygulamanın kesintisiz veya hatasız çalışacağı</li>
+      <li>İçeriklerin her zaman güncel ve eksiksiz olduğu</li>
+      <li>Uygulamanın kullanımının belirli bir sınav sonucunu garanti ettiği</li>
+    </ul>
+    <p>KPSS sınav sonuçlarınız veya öğrenme hedefleriniz için herhangi bir taahhütte bulunulmamaktadır.</p>
+  </div>
+
+  <h2>7. Sorumluluk Sınırı</h2>
+  <div class="card">
+    <p>Yürürlükteki hukuk tarafından izin verilen azami ölçüde; KPSS Pusulam, Uygulamanın kullanımından veya kullanılamamasından kaynaklanan dolaylı, arızi, özel veya sonuçsal zararlardan sorumlu tutulamaz.</p>
+  </div>
+
+  <h2>8. Hesap Feshi ve Erişimin Askıya Alınması</h2>
+  <div class="card">
+    <p>Bu Kullanım Koşullarını ihlal etmeniz durumunda hesabınız önceden bildirim yapılmaksızın askıya alınabilir veya sonlandırılabilir. Hesabınızı kendiniz silmek için bizimle iletişime geçebilirsiniz.</p>
+    <p><strong>İletişim:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
+  </div>
+
+  <h2>9. Değişiklikler</h2>
+  <div class="card">
+    <p>Bu Kullanım Koşullarını zaman zaman güncelleyebiliriz. Önemli değişiklikler uygulama içi bildirimle duyurulacaktır. Güncel koşullar her zaman bu sayfada yayınlanır. Değişikliklerden sonra Uygulamayı kullanmaya devam etmeniz, yeni koşulları kabul ettiğiniz anlamına gelir.</p>
+  </div>
+
+  <h2>10. Uygulanacak Hukuk</h2>
+  <div class="card">
+    <p>Bu Kullanım Koşulları, <strong>Türkiye Cumhuriyeti</strong> hukukuna tabidir. Anlaşmazlıklarda Türk mahkemeleri yetkilidir.</p>
+  </div>
+
+  <h2>11. İletişim</h2>
+  <div class="card">
+    <p>Bu Kullanım Koşullarına ilişkin soru veya talepleriniz için:</p>
+    <p><strong>E-posta:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- ===== ENGLISH ===== -->
+<section id="en">
+  <span class="updated">Last updated: June 13, 2026</span>
+
+  <div class="card">
+    <p>These Terms of Use govern your use of the <strong>KPSS Pusulam</strong> application ("the App"). By downloading or using the App, you agree to these terms. If you do not agree, please do not use the App.</p>
+  </div>
+
+  <h2>1. License and Usage Rights</h2>
+  <div class="card">
+    <p>KPSS Pusulam grants you a limited, non-transferable, non-exclusive license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
+    <ul>
+      <li>You may only use the App in compliance with these Terms.</li>
+      <li>Copying, modifying, reverse engineering, or creating derivative works from the App is prohibited.</li>
+      <li>Reselling or sublicensing the App for commercial purposes is prohibited.</li>
+    </ul>
+  </div>
+
+  <h2>2. Account and Authentication</h2>
+  <div class="card">
+    <p>The App creates anonymous user identities via <strong>Firebase Authentication</strong>. You are responsible for maintaining the security of your account.</p>
+    <ul>
+      <li>You must notify us immediately if you detect unauthorized access to your account.</li>
+      <li>You must not share your account credentials with third parties.</li>
+      <li>Each user may hold only one account; creating multiple accounts is prohibited.</li>
+    </ul>
+  </div>
+
+  <h2>3. Paid Services and Subscriptions</h2>
+  <div class="card">
+    <h3>3.1 Premium Subscription</h3>
+    <p>Premium subscription options are available in the App via the <strong>Adapty</strong> SDK. Subscription fees vary by plan and region.</p>
+    <ul>
+      <li>Subscriptions auto-renew unless cancelled.</li>
+      <li>Cancellations are managed through your App Store or Google Play account settings.</li>
+      <li>No refunds are provided for the remaining portion of the current subscription period upon cancellation.</li>
+    </ul>
+    <h3>3.2 Rewarded Ads</h3>
+    <p>Free-tier users can watch rewarded ads via <strong>Google AdMob</strong> to earn hearts or additional content. Ad content belongs to third parties; we are not responsible for such content.</p>
+  </div>
+
+  <h2>4. Content and Intellectual Property</h2>
+  <div class="card">
+    <p>All content in the App (lesson explanations, questions, visuals, UI design, etc.) is owned by or licensed to <strong>KPSS Pusulam</strong>.</p>
+    <ul>
+      <li>Copying, distributing, or publishing content without written permission is prohibited.</li>
+      <li>Questions in the App may only be used for personal study purposes.</li>
+      <li>The KPSS Pusulam name, logo, and brand are registered and may not be used without permission.</li>
+    </ul>
+  </div>
+
+  <h2>5. Prohibited Use</h2>
+  <div class="card">
+    <p>The following uses are strictly prohibited:</p>
+    <ul>
+      <li>Using the App for illegal purposes</li>
+      <li>Using automated bots, scrapers, or tools that overload the system</li>
+      <li>Attempting to gain unauthorized access to other users' data</li>
+      <li>Artificially manipulating leaderboard rankings</li>
+      <li>Attempting to exploit security vulnerabilities in the App</li>
+    </ul>
+  </div>
+
+  <h2>6. Disclaimer and Warranties</h2>
+  <div class="card">
+    <p>The App is provided <strong>"as is."</strong> KPSS Pusulam makes no warranties regarding:</p>
+    <ul>
+      <li>Uninterrupted or error-free operation of the App</li>
+      <li>Content being always up-to-date and complete</li>
+      <li>Use of the App guaranteeing any specific exam result</li>
+    </ul>
+    <p>No commitment is made regarding your KPSS exam results or learning objectives.</p>
+  </div>
+
+  <h2>7. Limitation of Liability</h2>
+  <div class="card">
+    <p>To the maximum extent permitted by applicable law, KPSS Pusulam shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of or inability to use the App.</p>
+  </div>
+
+  <h2>8. Account Termination and Suspension</h2>
+  <div class="card">
+    <p>If you violate these Terms of Use, your account may be suspended or terminated without prior notice. To delete your account yourself, please contact us.</p>
+    <p><strong>Contact:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
+  </div>
+
+  <h2>9. Changes</h2>
+  <div class="card">
+    <p>We may update these Terms of Use from time to time. Significant changes will be announced via an in-app notification. The current terms are always published on this page. Continued use of the App after changes constitutes your acceptance of the new terms.</p>
+  </div>
+
+  <h2>10. Governing Law</h2>
+  <div class="card">
+    <p>These Terms of Use are governed by the laws of the <strong>Republic of Turkey</strong>. Turkish courts shall have jurisdiction over any disputes.</p>
+  </div>
+
+  <h2>11. Contact</h2>
+  <div class="card">
+    <p>For any questions or requests regarding these Terms of Use:</p>
+    <p><strong>Email:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
+  </div>
+</section>
+
+</div><!-- /container -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span>🧭</span>
+      <span>KPSS Pusulam</span>
+    </div>
+    <a href="privacy-policy.html" class="footer-link">Gizlilik Politikası</a>
+    <p class="footer-copy">© 2026 KPSS Pusulam · <a href="mailto:cetinyusuf35@gmail.com" style="color:inherit">cetinyusuf35@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+function showLang(lang, btn) {
+  document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.lang-tabs button').forEach(b => b.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>

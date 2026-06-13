@@ -3,110 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gizlilik Politikası / Privacy Policy – Kpss Pusulam</title>
+  <title>Gizlilik Politikası / Privacy Policy – KPSS Pusulam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #f5f5f7;
-      color: #1d1d1f;
-      line-height: 1.7;
-    }
-    header {
-      background: #1c1c1e;
-      color: #fff;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-    header h1 { font-size: 1.8rem; font-weight: 700; }
-    header p  { font-size: 0.9rem; opacity: 0.7; margin-top: 0.4rem; }
-    .lang-tabs {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1.2rem;
-      background: #fff;
-      border-bottom: 1px solid #e5e5ea;
-    }
-    .lang-tabs button {
-      padding: 0.5rem 1.4rem;
-      border: 2px solid #636366;
-      border-radius: 999px;
-      background: transparent;
-      cursor: pointer;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #636366;
-      transition: all 0.2s;
-    }
-    .lang-tabs button.active {
-      background: #1c1c1e;
-      border-color: #1c1c1e;
-      color: #fff;
-    }
-    .container {
-      max-width: 780px;
-      margin: 2rem auto;
-      padding: 0 1.5rem 4rem;
-    }
-    section { display: none; }
-    section.active { display: block; }
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-      color: #1c1c1e;
-      border-left: 4px solid #1c1c1e;
-      padding-left: 0.75rem;
-    }
-    h3 { font-size: 1rem; margin-top: 1.2rem; margin-bottom: 0.3rem; font-weight: 600; }
-    p, li { font-size: 0.95rem; color: #3a3a3c; margin-top: 0.4rem; }
-    ul { padding-left: 1.4rem; }
-    li { margin-top: 0.3rem; }
-    a { color: #0071e3; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .card {
-      background: #fff;
-      border-radius: 14px;
-      padding: 1.5rem;
-      margin-top: 1.2rem;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    }
-    .updated {
-      font-size: 0.82rem;
-      color: #8e8e93;
-      margin-top: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.8rem;
-      color: #8e8e93;
-      border-top: 1px solid #e5e5ea;
-    }
+/* ============================================================
+   KPSS Pusulam — Privacy Policy
+   Matches landing page dark theme (#4BEE2B primary)
+   ============================================================ */
+:root {
+  --primary: #4BEE2B;
+  --primary-subtle: rgba(75,238,43,0.08);
+  --bg: #0c0c0c;
+  --bg-card: #161616;
+  --bg-card2: #1e1e1e;
+  --border: rgba(255,255,255,0.07);
+  --text: #f0f0f0;
+  --text-muted: #888;
+  --text-dim: #555;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.7;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #2ecc11; border-radius: 3px; }
+
+/* ── Navbar ──────────────────────────────────────────────── */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(12,12,12,0.92); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border); padding: 16px 24px;
+}
+.nav-inner {
+  max-width: 860px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text); }
+.logo-icon { font-size: 1.3rem; }
+.logo-text { font-weight: 700; font-size: 1rem; letter-spacing: -0.02em; }
+.nav-back {
+  font-size: 0.82rem; color: var(--text-muted); text-decoration: none;
+  display: flex; align-items: center; gap: 5px;
+  transition: color 0.2s;
+}
+.nav-back:hover { color: var(--primary); }
+
+/* ── Header ──────────────────────────────────────────────── */
+.page-header {
+  padding: 60px 24px 40px; text-align: center;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(75,238,43,0.04) 0%, transparent 100%);
+}
+.page-header h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 900; letter-spacing: -0.04em; }
+.page-header p { font-size: 0.9rem; color: var(--text-muted); margin-top: 8px; }
+
+/* ── Lang Tabs ───────────────────────────────────────────── */
+.lang-tabs {
+  display: flex; justify-content: center; gap: 10px;
+  padding: 24px; border-bottom: 1px solid var(--border);
+  position: sticky; top: 57px; z-index: 50;
+  background: rgba(12,12,12,0.95); backdrop-filter: blur(12px);
+}
+.lang-tabs button {
+  padding: 8px 24px; border: 1.5px solid var(--border); border-radius: 100px;
+  background: transparent; cursor: pointer; font-size: 0.85rem; font-weight: 600;
+  color: var(--text-muted); font-family: inherit;
+  transition: all 0.2s;
+}
+.lang-tabs button:hover { border-color: rgba(75,238,43,0.4); color: var(--text); }
+.lang-tabs button.active {
+  background: var(--primary); border-color: var(--primary);
+  color: #000;
+}
+
+/* ── Content ─────────────────────────────────────────────── */
+.container { max-width: 860px; margin: 0 auto; padding: 40px 24px 80px; }
+section { display: none; }
+section.active { display: block; }
+
+.updated {
+  display: inline-block; background: var(--primary-subtle);
+  color: var(--primary); font-size: 0.78rem; font-weight: 600;
+  padding: 4px 12px; border-radius: 100px; margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.1rem; font-weight: 700; margin: 36px 0 16px;
+  color: var(--text); display: flex; align-items: center; gap: 10px;
+  letter-spacing: -0.02em;
+}
+h2::before {
+  content: ''; display: block; width: 3px; height: 1.1em;
+  background: var(--primary); border-radius: 2px; flex-shrink: 0;
+}
+h3 { font-size: 0.9rem; font-weight: 700; margin: 20px 0 8px; color: var(--text); }
+
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 16px; padding: 24px; margin-bottom: 8px;
+}
+.card + .card { margin-top: 8px; }
+
+p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 10px; }
+p:last-child { margin-bottom: 0; }
+ul { padding-left: 20px; }
+li { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 8px; line-height: 1.6; }
+li:last-child { margin-bottom: 0; }
+strong { color: var(--text); font-weight: 600; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Footer ──────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--border); padding: 28px 24px;
+  text-align: center;
+}
+.footer-inner {
+  max-width: 860px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-logo { display: flex; align-items: center; gap: 8px; }
+.footer-logo span:first-child { font-size: 1.2rem; }
+.footer-logo span:last-child { font-weight: 700; font-size: 0.95rem; }
+.footer-copy { font-size: 0.8rem; color: var(--text-dim); }
+.footer-link { font-size: 0.8rem; color: var(--text-muted); text-decoration: none; }
+.footer-link:hover { color: var(--primary); }
+
+@media (max-width: 600px) {
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+  .page-header { padding: 40px 24px 28px; }
+}
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Kpss Pusulam</h1>
-  <p>Gizlilik Politikası &amp; Privacy Policy</p>
-</header>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🧭</span>
+      <span class="logo-text">KPSS Pusulam</span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Ana Sayfa
+    </a>
+  </div>
+</nav>
 
+<!-- Header -->
+<div class="page-header">
+  <h1>Gizlilik Politikası</h1>
+  <p>Privacy Policy</p>
+</div>
+
+<!-- Lang Tabs -->
 <div class="lang-tabs">
   <button class="active" onclick="showLang('tr', this)">Türkçe</button>
   <button onclick="showLang('en', this)">English</button>
 </div>
 
-<!-- ===== TÜRKÇE ===== -->
+<!-- Content -->
 <div class="container">
+
+<!-- ===== TÜRKÇE ===== -->
 <section id="tr" class="active">
+  <span class="updated">Son güncelleme: 1 Haziran 2026</span>
 
   <div class="card">
-    <p class="updated">Son güncelleme: 1 Haziran 2026</p>
-    <p style="margin-top:0.8rem">
-      Bu Gizlilik Politikası, <strong>Kpss Pusulam</strong> uygulamasının ("Uygulama") kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.
-    </p>
+    <p>Bu Gizlilik Politikası, <strong>KPSS Pusulam</strong> uygulamasının ("Uygulama") kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.</p>
   </div>
 
   <h2>1. Toplanan Veriler</h2>
@@ -180,24 +251,21 @@
   <h2>6. Kullanıcı Hakları &amp; Veri Silme</h2>
   <div class="card">
     <p>Verilerinize erişim, düzeltme veya silinmesini talep etmek için aşağıdaki e-posta adresine yazabilirsiniz. Talebiniz en geç <strong>30 gün</strong> içinde yanıtlanır.</p>
-    <p style="margin-top:0.8rem"><strong>İletişim:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
+    <p><strong>İletişim:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
   </div>
 
   <h2>7. Bu Politikanın Değiştirilmesi</h2>
   <div class="card">
     <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikler uygulama içi bildirimle duyurulacaktır. Güncel politika her zaman bu sayfada yayınlanır.</p>
   </div>
-
 </section>
 
 <!-- ===== ENGLISH ===== -->
 <section id="en">
+  <span class="updated">Last updated: June 1, 2026</span>
 
   <div class="card">
-    <p class="updated">Last updated: June 1, 2026</p>
-    <p style="margin-top:0.8rem">
-      This Privacy Policy explains how <strong>Kpss Pusulam</strong> ("the App") collects, uses, and protects your personal data. By using the App, you agree to this policy.
-    </p>
+    <p>This Privacy Policy explains how <strong>KPSS Pusulam</strong> ("the App") collects, uses, and protects your personal data. By using the App, you agree to this policy.</p>
   </div>
 
   <h2>1. Data We Collect</h2>
@@ -271,28 +339,39 @@
   <h2>6. Your Rights &amp; Data Deletion</h2>
   <div class="card">
     <p>To request access, correction, or deletion of your data, contact us at the email below. We will respond within <strong>30 days</strong>.</p>
-    <p style="margin-top:0.8rem"><strong>Contact:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
+    <p><strong>Contact:</strong> <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a></p>
   </div>
 
   <h2>7. Changes to This Policy</h2>
   <div class="card">
     <p>We may update this policy from time to time. Significant changes will be announced via an in-app notification. The current policy is always published on this page.</p>
   </div>
-
 </section>
+
 </div><!-- /container -->
 
-<footer>
-  &copy; 2026 Kpss Pusulam &middot; <a href="mailto:cetinyusuf35@gmail.com">cetinyusuf35@gmail.com</a>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span>🧭</span>
+      <span>KPSS Pusulam</span>
+    </div>
+    <div style="display:flex;gap:16px;">
+      <a href="index.html" class="footer-link">Ana Sayfa</a>
+      <a href="terms-of-use.html" class="footer-link">Kullanım Koşulları</a>
+    </div>
+    <p class="footer-copy">© 2026 KPSS Pusulam · <a href="mailto:cetinyusuf35@gmail.com" style="color:inherit">cetinyusuf35@gmail.com</a></p>
+  </div>
 </footer>
 
 <script>
-  function showLang(lang, btn) {
-    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-    document.querySelectorAll('.lang-tabs button').forEach(b => b.classList.remove('active'));
-    document.getElementById(lang).classList.add('active');
-    btn.classList.add('active');
-  }
+function showLang(lang, btn) {
+  document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.lang-tabs button').forEach(b => b.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+  btn.classList.add('active');
+}
 </script>
 </body>
 </html>
